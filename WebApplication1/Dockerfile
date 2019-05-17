@@ -18,4 +18,4 @@ RUN dotnet publish -c Release -o out
 FROM microsoft/dotnet:2.2-aspnetcore-runtime
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "sample-web.dll"]
+ENTRYPOINT ["dotnet", "WebApplication1.dll"]
